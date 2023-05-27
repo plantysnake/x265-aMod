@@ -856,7 +856,7 @@ if(ENABLE_CLI)
     if(ARCH_OPT)
         set(OUTPUT_NAME ${OUTPUT_NAME}-opt-${ARCH_OPT})
     endif()
-    set_target_properties(cli PROPERTIES OUTPUT_NAME ${OUTPUT_NAME})
+    set_target_properties(cli PROPERTIES OUTPUT_NAME x265)
     if(LINKER_OPTIONS)
         # set_target_properties can't do list expansion
         string(REPLACE ";" " " LINKER_OPTION_STR "${LINKER_OPTIONS}")
