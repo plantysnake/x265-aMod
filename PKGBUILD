@@ -28,6 +28,7 @@ build() {
         -DEXPORT_C_API='OFF' \
         -DENABLE_CLI='OFF' \
 		-DENABLE_LIBNUMA='ON' \
+		-DENABLE_PIC='ON' \
         -DENABLE_SHARED='OFF' \
         -DCMAKE_ASM_NASM_FLAGS=-w-macro-params-legacy \
         -Wno-dev
@@ -39,6 +40,7 @@ build() {
         -DEXPORT_C_API='OFF' \
         -DENABLE_CLI='OFF' \
 		-DENABLE_LIBNUMA='ON' \
+		-DENABLE_PIC='ON' \
         -DENABLE_SHARED='OFF' \
         -DCMAKE_ASM_NASM_FLAGS=-w-macro-params-legacy \
         -Wno-dev
@@ -52,6 +54,7 @@ build() {
         -DEXTRA_LINK_FLAGS='-L.' \
         -DENABLE_CLI='ON' \
 		-DENABLE_LIBNUMA='ON' \
+		-DENABLE_PIC='ON' \
         -DLINKED_10BIT='ON' \
         -DLINKED_12BIT='ON' \
         -DCMAKE_ASM_NASM_FLAGS=-w-macro-params-legacy \
